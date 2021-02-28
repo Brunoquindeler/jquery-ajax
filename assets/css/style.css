@@ -1,0 +1,98 @@
+body {
+    place-content: center;
+    text-align: center;
+    display: grid;
+    background-color: steelblue;
+    color: snow;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    display: grid;
+    justify-content: center;
+    border-color: snow;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+table tbody {
+    display: table;
+}
+
+table caption {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+table td {
+    border: none;
+}
+
+footer {
+    position: relative;
+    display: grid;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-family: bold;
+    color: snow;
+    font-family: 'Langar', cursive;
+}
+
+a:hover {
+    color: lawngreen;
+}
+
+button {
+    cursor: pointer;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    padding: 1rem;
+}
+
+.search button#btn_search {
+    background-color: snow;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 30%;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border: none;
+    border-radius: 5%;
+}
+
+.search button#btn_search:hover {
+    background-color: lawngreen;
+}
+
+.search button#btn_search:focus {
+    outline: none;
+}
+
+.search input#cep_search {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5%;
+    color: rgb(28, 27, 31, 0.8);
+
+}
+
+.search input#cep_search:focus {
+    outline: none;
+}
