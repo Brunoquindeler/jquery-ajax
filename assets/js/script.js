@@ -1,9 +1,21 @@
-let table_content = document.querySelector("#table_content")
+let table_content = document.querySelector("#table_content");
+
+let btn_search = document.querySelector("#btn_search");
 
 date_year.innerHTML = `&copy  ${new Date().getFullYear()}  &nbsp;|`;
 
-function consultaCep() {
-    // let cep = document.querySelector("#cep").value;
+if (cep_search) {
+    cep_search.addEventListener('keyup', function (e) {
+        var key = e.which || e.keyCode;
+        if (key == 13) { // Código da tecla enter
+            btn_search.onclick();
+        }
+    });
+};
+
+btn_search.onclick = function () {
+
+    // let cep = document.querySelector("#cep_search").value;
 
     // Coloca somente dígitos.
     let cep = $("#cep_search").val().replace(/\D/g, '');
