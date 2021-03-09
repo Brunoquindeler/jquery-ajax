@@ -4,7 +4,8 @@ body {
     align-items: center;
     text-align: center;
     display: grid;
-    background-color: steelblue;
+    /* background-color: steelblue; */
+    background-color: #191C21;
     color: snow;
     font-weight: bold;
     width: 100%;
